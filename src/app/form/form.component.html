@@ -37,7 +37,7 @@
           type="email"
           name="email"
           placeholder="john@doe.com"
-          required=""
+          required
         />
       </div>
       <div suiFormField>
@@ -47,6 +47,7 @@
           name="phoneNumber"
           placeholder="+123-5435-5433"
           [(ngModel)]="phoneNumber"
+          required
         />
       </div>
 
@@ -58,6 +59,7 @@
             suiPlaceholder="Country"
             [suiOptions]="countries"
             [(ngModel)]="country"
+            required
           ></sui-select>
         </div>
         <div suiFormField>
@@ -67,6 +69,7 @@
             [(ngModel)]="occupation"
             suiPlaceholder="Occupation"
             [suiOptions]="occupations"
+            required
           ></sui-select>
         </div>
       </div>
@@ -79,6 +82,7 @@
             name="successful"
             value="true"
             [(ngModel)]="successful"
+            required
           />
           <label>True</label>
         </div>
@@ -90,6 +94,7 @@
             name="successful"
             value="false"
             [(ngModel)]="successful"
+            required
           />
           <label>False</label>
         </div>
